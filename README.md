@@ -12,6 +12,6 @@
 
 Afegeix al lloc on vulguis mostrar l'editor de Hedy un bloc de `codi de substitució` (també funciona dins un bloc HTML o paràgraf).
 
-Per escriure el teu codi hedy caldrà començar amb l'etiqueta `[hedy nivell=1]`, on s'indica el nivell amb el qual s'executa el codi Hedy i caldrà acabar amb l'etiqueta `[/hedy]`. Entremig de les dues etiquetes pots posar el codi Hedy que vols que s'inclogui a l'editor. Per exemple:
+Per mostrar un editor Hedy caldrà començar amb l'etiqueta `[hedy nivell=1]`, on s'indica el nivell amb el qual s'executa el codi Hedy i caldrà acabar amb l'etiqueta `[/hedy]`. Entremig de les dues etiquetes pots posar el codi Hedy que vols que s'inclogui a l'editor. Per exemple:
 
 ![bla](https://i.imgur.com/4SveYt3.png)
