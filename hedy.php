@@ -8,7 +8,6 @@
  Author URI: https://github.com/aniollidon/
  */
 
- require_once('hedy-widget.php');
 
  function hedy_handler( $atts, $content, $tag ){ 
     $nivell = $atts["nivell"];
