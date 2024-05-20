@@ -4,7 +4,7 @@
  Plugin URI: http://hedy.org
  Description: Plugin per afegir codi Hedy a Wordpress
  Author: Aniol Lidon Baulida
- Version: 0.1
+ Version: 0.2
  Author URI: https://github.com/aniollidon/
  */
 
@@ -13,13 +13,13 @@
     $nivell = $atts["nivell"];
     if(!$nivell) 
         return "Cal especificar el nivell com atribut";
-    $codi_enc = (trim($content));
+    $codi_enc = trim($content);
     $codi_enc = str_replace("&#8220;","\"" , $codi_enc);
     $codi_enc = str_replace("&#8221;","\"" , $codi_enc);
     $codi_enc = str_replace("&#8217;","'" , $codi_enc);
     $codi_enc = str_replace("&#8216;","'" , $codi_enc);
-
-
+    $codi_enc = strip_tags($codi_enc);
+    $codi_enc = trim($codi_enc);
     $codi_enc = urlencode($codi_enc);
 
     // -webkit-transform:scale(0.5);-moz-transform-scale(0.5);
